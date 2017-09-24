@@ -2,8 +2,9 @@
 
 @section('content')
     <div class="background mh">
+        {{--<img src="../img/404.png" width="800px" height="210px" class="logo center-block">--}}
         <h1 class="text-center align-middle mainheader">Pegasus</h1>
-        <!--<img src="./img/Logo.png" width="1200px" height="310px" class="logo">-->
+
 
     </div>
 

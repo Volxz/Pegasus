@@ -35,11 +35,11 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="#">Home</a>
+                <li class="{{ !Request::segment(1) ? 'active' : null }}">
+                    <a href="{{ url('/') }}">Home</a>
                 </li>
-                <li>
-                    <a href="#">Submit</a>
+                <li class="{{ Request::segment(1) === 'submit' ? 'active' : null }}">
+                    <a href="{{ url('submit') }}">Submit</a>
                 </li>
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Work <b class="caret"></b></a>

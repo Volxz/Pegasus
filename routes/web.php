@@ -14,5 +14,7 @@
 Route::get('/', function () {
     return view('splash');
 });
-
+Route::get('/submit', function () {
+    return view('submit');
+});
 Auth::routes();

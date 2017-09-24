@@ -5,51 +5,56 @@ body {
     position: relative;
     background-color: #e6e6e6;
 
+}
 
-}
-nav.navbar{
+nav.navbar {
     background-color: #14add4;
+    margin: 0;
 }
-.navbar-nav{
+
+.navbar-nav {
     background-color: transparent;
 }
-.active{
+
+.active {
     background-color: #a4e9ff
 }
+
 img.logo {
     max-width: 100%;
     height: Auto
 }
-.background{
-    background:
-            url("../../../../../xampp/htdocs/Pegasus/img/bg.jpg")
-            no-repeat fixed;
+
+.background {
+    background: url("../img/bg.jpg") no-repeat fixed;
 
     width: 100%;
     position: relative;
-    /*position: relative;*/
 
-    /*top: 0;*/
-    /*left: 0;*/
+    top: 0;
+    left: 0;
 
-    /*height: 100%;*/
+    height: 100%;
 
     background-size: cover;
 
 }
-div.mh{
+
+div.mh {
     padding-top: 45vh;
     padding-bottom: 45vh;
     color: #145b59;
     height: 100%;
 }
-.submit{
+
+.submit {
     height: 40vh;
     position: relative;
     background-color: #e6e6e6;
 
 }
-.top-padding-5{
+
+.top-padding-5 {
 
     padding-top: 10vh;
 
@@ -65,9 +70,10 @@ button.pri {
     font-size: 26px;
     border-radius: 5px
 }
+
 button.sec {
     background-color: #303030;
-    border:none;
+    border: none;
     color: #e5efef;
     padding: 5px 10px;
 
@@ -87,10 +93,9 @@ input {
     font-size: 26px;
     border-radius: 5px
 }
-.about{
-    background:
-            url("../../../../../xampp/htdocs/Pegasus/img/bg.jpg")
-            no-repeat fixed;
+
+.about {
+    background: url("../img/bg.jpg") no-repeat fixed;
 
     width: 100%;
     position: relative;
@@ -102,26 +107,29 @@ input {
 
     background-size: cover;
 }
-.about-txt{
-    color:white;
-}
-.about-txt-main{
+
+.about-txt {
     color: white;
-    width:75%;
-    text-align: center;
-    padding-bottom: 5vh ;
 }
-span.icon-bar{
+
+.about-txt-main {
+    color: white;
+    width: 75%;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+span.icon-bar {
 
     background-color: white;
     border-color: white;
     color: white;
 }
-.about-txt{
 
-    color:white;
+.about-txt {
+
+    color: white;
 }
-
 
 /*upload file button*/
 .js .inputfile {
@@ -173,7 +181,6 @@ span.icon-bar{
     /* 4px */
 }
 
-
 /* style 1 */
 
 .inputfile-1 + label {
@@ -187,10 +194,7 @@ span.icon-bar{
     background-color: #285d72;
 }
 
-
 /* style 2 */
-
-
 
 @media screen and (max-width: 50em) {
     .inputfile-6 + label strong {
