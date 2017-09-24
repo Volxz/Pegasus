@@ -14,10 +14,7 @@
 Route::get('/', function () {
     return view('splash');
 });
-Route::get('/submit', function () {
-    return view('submit');
-});
-Route::get('/posts', function () {
-    return view('all-post');
-});
+
+Route::get('/oauth/google', 'OauthController@googleOauth');
+
 Auth::routes();
