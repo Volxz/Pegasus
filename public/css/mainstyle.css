@@ -1,0 +1,201 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    position: relative;
+    background-color: #e6e6e6;
+
+
+}
+nav.navbar{
+    background-color: #14add4;
+}
+.navbar-nav{
+    background-color: transparent;
+}
+.active{
+    background-color: #a4e9ff
+}
+img.logo {
+    max-width: 100%;
+    height: Auto
+}
+.background{
+    background:
+            url("../../../../../xampp/htdocs/Pegasus/img/bg.jpg")
+            no-repeat fixed;
+
+    width: 100%;
+    position: relative;
+    /*position: relative;*/
+
+    /*top: 0;*/
+    /*left: 0;*/
+
+    /*height: 100%;*/
+
+    background-size: cover;
+
+}
+div.mh{
+    padding-top: 45vh;
+    padding-bottom: 45vh;
+    color: #145b59;
+    height: 100%;
+}
+.submit{
+    height: 40vh;
+    position: relative;
+    background-color: #e6e6e6;
+
+}
+.top-padding-5{
+
+    padding-top: 10vh;
+
+}
+
+button.pri {
+    background-color: transparent;
+    border: #276059 2px solid;
+    color: #276059;
+    padding: 10px 35px;
+
+    text-decoration: none;
+    font-size: 26px;
+    border-radius: 5px
+}
+button.sec {
+    background-color: #303030;
+    border:none;
+    color: #e5efef;
+    padding: 5px 10px;
+
+    text-decoration: none;
+    /*display: inline-block;*/
+    border-radius: 5px
+}
+
+input {
+    background-color: transparent;
+    border: #276059 2px solid;
+    color: #276059;
+    padding: 15px 42px;
+
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border-radius: 5px
+}
+.about{
+    background:
+            url("../../../../../xampp/htdocs/Pegasus/img/bg.jpg")
+            no-repeat fixed;
+
+    width: 100%;
+    position: relative;
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+
+    background-size: cover;
+}
+.about-txt{
+    color:white;
+}
+.about-txt-main{
+    color: white;
+    width:75%;
+    text-align: center;
+    padding-bottom: 5vh ;
+}
+span.icon-bar{
+
+    background-color: white;
+    border-color: white;
+    color: white;
+}
+.about-txt{
+
+    color:white;
+}
+
+
+/*upload file button*/
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #6cb2d3;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #285d72;
+}
+
+
+/* style 2 */
+
+
+
+@media screen and (max-width: 50em) {
+    .inputfile-6 + label strong {
+        display: block;
+    }
+}
+
+
