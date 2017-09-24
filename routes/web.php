@@ -17,4 +17,7 @@ Route::get('/', function () {
 Route::get('/submit', function () {
     return view('submit');
 });
+Route::get('/posts', function () {
+    return view('all-post');
+});
 Auth::routes();

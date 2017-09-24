@@ -41,10 +41,10 @@
                 <li class="{{ Request::segment(1) === 'submit' ? 'active' : null }}">
                     <a href="{{ url('submit') }}">Submit</a>
                 </li>
-                <li>
+                <li class="{{ Request::segment(1) === 'posts' ? 'active' : null }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Work <b class="caret"></b></a>
                     <ul class="dropdown-menu multi-level">
-                        <li><a href="#">All</a></li>
+                        <li><a href="{{ url('posts') }}">All</a></li>
                         <li><a href="#">Poetry</a></li>
                         <li><a href="#">Art</a></li>
 

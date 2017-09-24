@@ -201,5 +201,11 @@ span.icon-bar {
         display: block;
     }
 }
+div.mh2 {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    color: #145b59;
+    height: 100%;
+}
 
 
