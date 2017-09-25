@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('splash');
 });
 
+
+Route::resource('posts', 'PostController');
+
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
 Route::get('/oauth/google', 'OauthController@googleOauth');
 
 Auth::routes();

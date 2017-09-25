@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Auth;
 
 class OauthController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('guest');
+    }
+
     function googleOauth(Request $request)
     {
         // get data from request
@@ -31,8 +36,10 @@ class OauthController extends Controller
 
             $findUser = User::where('email', $result['email'])->first();
 
-            if($findUser)
+            if($findUser){
                 Auth::login($findUser, true);
+                return redirect('posts');
+            }
             elseif (array_key_exists('hd', $result) && $result['hd'] === 'ljcds.org') {
                 $newUser = new User();
                 $newUser->password = Hash::make(str_random(10));

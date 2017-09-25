@@ -38,10 +38,10 @@
                 <li class="{{ !Request::segment(1) ? 'active' : null }}">
                     <a href="{{ url('/') }}">Home</a>
                 </li>
-                <li class="{{ Request::segment(1) === 'submit' ? 'active' : null }}">
-                    <a href="{{ url('submit') }}">Submit</a>
+                <li class="{{ Request::segment(1) === 'posts' && Request::segment(2) === 'create' ? 'active' : null }}">
+                    <a href="{{ url('posts/create') }}">Submit</a>
                 </li>
-                <li class="{{ Request::segment(1) === 'posts' ? 'active' : null }}">
+                <li class="{{ Request::segment(1) === 'posts' && !Request::segment(2) === 'create' ? 'active' : null }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student Work <b class="caret"></b></a>
                     <ul class="dropdown-menu multi-level">
                         <li><a href="{{ url('posts') }}">All</a></li>
