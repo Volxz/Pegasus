@@ -38,7 +38,7 @@ class OauthController extends Controller
 
             if($findUser){
                 Auth::login($findUser, true);
-                return redirect('posts');
+                return redirect('posts/create');
             }
             elseif (array_key_exists('hd', $result) && $result['hd'] === 'ljcds.org') {
                 $newUser = new User();
@@ -47,6 +47,8 @@ class OauthController extends Controller
                 $newUser->name = $result['name'];
                 $newUser->save();
                 Auth::login($newUser);
+                return redirect('posts/create');
+
             }
             else{
                 //They arent using a student account on the ljdcs domain

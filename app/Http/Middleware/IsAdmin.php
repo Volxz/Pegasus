@@ -19,7 +19,9 @@ class IsAdmin
         if (Auth::user() &&  Auth::user()->admin == 1) {
             return $next($request);
         }
+        if (!Auth::user()) {
+            return redirect('/oauth/google');
+        }
 
-        return redirect('/posts');
     }
 }

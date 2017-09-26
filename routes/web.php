@@ -20,6 +20,11 @@ Route::resource('posts', 'PostController');
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
+Route::get('login', function (){
+    return redirect('/oauth/google');
+});
+
+
 Route::get('/oauth/google', 'OauthController@googleOauth');
 
 Auth::routes();

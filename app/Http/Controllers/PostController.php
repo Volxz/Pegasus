@@ -7,8 +7,9 @@ class PostController extends Controller
 
     public function __construct()
     {
-        $this->middleware('admin', ['except' => ['index','show','create']]);
         $this->middleware('auth')->only('create');
+        $this->middleware('admin')->only('edit','update','destroy');
+
     }
 
   /**
