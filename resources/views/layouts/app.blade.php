@@ -54,9 +54,38 @@
                         <li><a href="#">Other</a></li>
 
                     </ul>
+
                 </li>
-                <li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                @guest
+                    <li>
+                        <a href="{{url('login')}}">Login</a>
+                    </li>
+
+                @endguest
+                @auth
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Auth::user()->name}}</a>
+                        <ul class="dropdown-menu multi-level" >
+                            <li>
+                                <a href="{{url('logout')}}">Logout</a>
+
+                            </li>
+                            <li>
+                                <a href="{{url('account')}}">Account</a>
+
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+
+                @endauth
+            </ul>
+
+
         </div>
     </div>
 </nav>
