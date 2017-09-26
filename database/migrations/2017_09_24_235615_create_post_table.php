@@ -12,7 +12,7 @@ class CreatePostTable extends Migration {
 			$table->string('type', 10)->default('text');
 			$table->integer('author')->default('0');
 			$table->string('title')->default('Untitled');
-			$table->string('content');
+			$table->longText('content');
 			$table->boolean('approved')->default(false);
 			$table->timestamps();
 			$table->softDeletes();
@@ -21,6 +21,6 @@ class CreatePostTable extends Migration {
 
 	public function down()
 	{
-		Schema::drop('post');
+		Schema::drop('posts');
 	}
 }

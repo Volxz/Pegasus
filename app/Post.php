@@ -15,4 +15,9 @@ class Post extends Model
 
     protected $dates = ['deleted_at'];
 
+    public function isApproved()
+    {
+        return (bool) $this->approved;
+    }
+
 }
