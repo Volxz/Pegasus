@@ -27,4 +27,6 @@ Route::get('login', function (){
 
 Route::get('/oauth/google', 'OauthController@googleOauth');
 
+Route::get('/admin/datatables/uposts', 'DataTablesController@unapprovedPosts');
+
 Auth::routes();

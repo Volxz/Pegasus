@@ -163,6 +163,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Yajra\Datatables\DataTablesServiceProvider::class,
 
 
         /*
@@ -232,6 +233,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'OAuth'     => Artdarek\OAuth\Facade\OAuth::class,
+        'DataTables' => Yajra\Datatables\Facades\DataTables::class,
+
 
 
     ],
