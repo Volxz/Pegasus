@@ -10,6 +10,6 @@ use DataTables;
 class DataTablesController extends Controller
 {
     function unapprovedPosts(){
-        return DataTables::eloquent(Post::where('approved',0))->make(true);
+        return Datatables::of(Post::with('user')->where('approved','0')->get())->make(true);
     }
 }
