@@ -14,7 +14,18 @@
 Route::get('/', function () {
     return view('splash');
 });
-
+Route::get('/admin/home', function () {
+    return view('admin.home');
+});
+Route::get('/admin/unapproved', function () {
+    return view('admin.unapproved');
+});
+Route::get('/admin/approved', function () {
+    return view('admin.approved');
+});
+Route::get('/error', function () {
+    return view('error');
+});
 
 Route::resource('posts', 'PostController');
 

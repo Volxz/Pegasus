@@ -68,15 +68,22 @@
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Auth::user()->name}}</a>
                         <ul class="dropdown-menu multi-level" >
-                            <li>
-                                <a href="{{url('logout')}}">Logout</a>
 
-                            </li>
                             <li>
                                 <a href="{{url('account')}}">Account</a>
 
                             </li>
+                            @if (Auth::user()->isAdministrator() )
+                            <li>
+                                <a href="{{url('admin/home')}}">Dashboard</a>
 
+                            </li>
+                            @endif
+                            <li class="divider"></li>
+                            <li>
+                                <a href="{{url('logout')}}">Logout</a>
+
+                            </li>
 
                         </ul>
                     </li>
