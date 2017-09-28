@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use \App\Post;
 use \App\User;
+use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -19,9 +21,12 @@ class PostController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return 'ListOfPosts';
+        if ($request->ajax()) {
+            return "AJAX";
+        }
+        return view('all-post');
     }
 
     /**
@@ -57,7 +62,7 @@ class PostController extends Controller
 
         $author = User::findOrFail($post->author);
 
-        return view('single-post',['author'=>$author, 'post'=>$post]);
+        return view('single-post', ['author' => $author, 'post' => $post]);
     }
 
     /**
@@ -90,7 +95,7 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-
+        Post::findOrFail($id)->delete();
     }
 
 }
