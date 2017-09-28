@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="{{asset("css/adminpage.css")}}">
     <link href="{{asset("css/fonta/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css">
 
@@ -68,7 +69,7 @@
                             <a href="#">Approved Posts</a>
                         </li>
                         <li>
-                            <a href="#">Unapproved Posts</a>
+                            <a href="{{url('admin/unapproved')}}">Unapproved Posts</a>
                         </li>
                         <li>
                             <a href="#">Deleted/Denied Posts Posts</a>
@@ -108,8 +109,12 @@
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 <script src="{{asset("js/adminpage.js")}}"></script>
 <script src="{{asset("js/metisMenu.js")}}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+@stack('scripts')
 </body>
 </html>
