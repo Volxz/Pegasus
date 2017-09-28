@@ -29,4 +29,13 @@ Route::get('/oauth/google', 'OauthController@googleOauth');
 
 Route::get('/admin/datatables/uposts', 'DataTablesController@unapprovedPosts');
 
+Route::get('/admin/datatables/aposts', 'DataTablesController@approvedPosts');
+
+Route::get('/admin/datatables/dposts', 'DataTablesController@deletedPosts');
+
+Route::get('/admin/datatables/users','DataTablesController@users');
+
+Route::get('/admin/datatables/admins','DataTablesController@admins');
+
+
 Auth::routes();
