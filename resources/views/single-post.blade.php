@@ -18,11 +18,8 @@
 <br><br><br>
 <div class="container">
     <div class="row">
-
-
-
-        <p class="name">{{$author->name}}</p>
-        <p class="name">Date: {{$post -> created_at}}</p>
+        <p class="name">{{$post->author->name}}</p>
+        <p class="name">Date: {{$post->created_at}}</p>
         <hr style="border-top: 1px solid #0e3d08;">
 
         <div>

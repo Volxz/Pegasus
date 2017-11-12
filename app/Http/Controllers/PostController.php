@@ -55,14 +55,9 @@ class PostController extends Controller
      * @param  int $id
      * @return Response
      */
-    public function show($id)
+    public function show(Post $post)
     {
-        $post = Post::findOrFail($id);
-        $this->authorize('view', $post);
-
-        $author = User::findOrFail($post->author);
-
-        return view('single-post', ['author' => $author, 'post' => $post]);
+        return view('single-post')->with($post);
     }
 
     /**
