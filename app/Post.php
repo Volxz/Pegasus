@@ -15,6 +15,10 @@ class Post extends Model
 
     protected $dates = ['deleted_at'];
 
+    protected $fillable = [
+        'user_id'
+    ];
+
     public function isApproved()
     {
         return (bool) $this->approved;
@@ -22,7 +26,7 @@ class Post extends Model
 
     public function author()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\User', 'user_id');
     }
 
 }
